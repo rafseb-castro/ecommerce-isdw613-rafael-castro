@@ -1,0 +1,11 @@
+/** @format */
+
+h2{
+    color: green;
+}
+
+.cell-header{ /** selector de tipo clase empieza con un punto*/
+background-color: burlywood;
+font-weight: bold;
+
+}
