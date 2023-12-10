@@ -1,0 +1,22 @@
+$color-azul-oscuro: #032e5a; 
+$color-boton: #3f97ef;
+$tamano-letra: 16px; 
+$tamano-boton: 20px; 
+
+label {
+  color: $color-azul-oscuro;
+  font-weight: bold;
+  font-size: $tamano-letra;
+}
+
+input[type="button"] {
+  background-color: $color-boton;
+  color: white;
+  font-size: $tamano-boton;
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+

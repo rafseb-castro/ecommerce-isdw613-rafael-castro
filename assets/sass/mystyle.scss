@@ -1,0 +1,21 @@
+$myFont: Helvetica, sans-serif; 
+$myFontSize: 18px; 
+$myColor: blue; 
+
+.detail{
+    font-size: $myFont;
+    $myColor: green; 
+}
+
+.button-base{
+    border: none;
+    padding: 20px;
+    color: $myColor;
+    font-size: 18px;
+}
+
+.button-report{
+    background-color: red;
+    @extend .button-base
+}
+
