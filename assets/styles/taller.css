@@ -1,0 +1,17 @@
+@charset "UTF-8";
+label {
+  color: #032e5a;
+  font-weight: bold;
+  font-size: 16px; }
+
+input[type="button"] {
+  background-color: #3f97ef;
+  color: white;
+  font-size: 20px;
+  padding: 8px 16px;
+  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+
