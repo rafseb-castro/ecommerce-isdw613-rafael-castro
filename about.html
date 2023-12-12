@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
 <style>
-    .mititulo{
+    #titulo{
         font-weight: bold;
         font-size: 2em; /*16px *1 = 16px  o 16px *2em = 32px*/
        /* color: #0000000;*/ 
@@ -44,19 +48,143 @@
         line-height: 1.5;
 
     }
+ 
+  
 </style>
     
 
 
 </head>
 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mi E-commerce</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conoce más</a>
+                </li>
+                <!-- Se activó el enlace y se cambió el texto a "Mis otros productos" -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="product.html">Mis otros productos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
 <body>
-    <p id="titulo" class="mititulo">Acerca de</p>
+    <p id="titulo" >Acerca de</p>
     
     <p class="mitexto">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi temporibus aut laboriosam, soluta repellat ipsam! Incidunt accusamus in officia fuga sequi quidem, nisi consectetur eveniet ex, dignissimos nesciunt, quam quia.
     </p>
+<div style="width: 70%;" class="col">
+    <table class="table table-striped table-border table-sm table hover" >
+        <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Tel&eacute;fono</th>
+        </tr>
+        <tr>
+            <td>Joe Doe</td>
+            <td>joe.doe@gmail.com</td>
+            <td>+593956554782</td>
+        </tr> 
+        <tr>
+            <td>Juan Doe</td>
+            <td>juan.doe@gmail.com</td>
+            <td>+59955522365</td>
+        </tr>
+        <tr>
+            <td>Juan Doe</td>
+            <td>juan.doe@gmail.com</td>
+            <td>+59955522365</td>
+        </tr>
+        <tr>
+            <td>Juan Doe</td>
+            <td>juan.doe@gmail.com</td>
+            <td>+59955522365</td>
+        </tr>
+    </table>
+ </div>
+ 
+
+ <div class="micombinador">
+    <p>Texto dentro de un combinador</p>
+    <h1>Cabecera</h1>
+ </div>
 </body>
 
 </html>
+
+<!--Clases para estilos en una tabla sin hacer uso de bootstrap
+
+/*
+    table, th, td{ /*Se puede indicar mas atributos en un selector al separar por comas*/
+        border: 1px solid;
+        width: 100%;
+    }
+
+    table{
+        border-collapse: collapse;
+    }
+
+    th{
+        height: 50px;
+        text-align:center; /*sirve para configurara la alineación horizontal*/
+        vertical-align:middle; /*sirve para configurar la alineacion vertical*/
+        background-color: black; /*color de fondo*/
+        color: white; /*color de las letras*/  
+    }
+
+    td{
+       /* padding-left: 10px;
+        padding-right: 20px;*/
+        padding: 15px;
+    }
+
+    td:hover{
+        color:greenyellow;
+    }
+
+    tr:nth-child(even){ /*indica filas impares en una tabla*/
+        background-color: aqua;
+    }
+
+    tr:nth-child(odd){ /*indica filas pares en una tabla*/
+        background-color: #95b2df;
+    }
+
+    a:hover{ /*cuando el mouse pasa sobre el elemento*/
+        color: #c14949;
+    }
+
+    a:visited{ /*cuado el elemento ha sido seleccionado*/
+        color: #399999;
+    }
+
+    p::first-letter{
+        font-size: 20px;
+    }
+
+    p::first-line{
+        color: blue;
+    } 
+    
+    .micombinador>p{
+        background-color: #12e131;
+    }
+
+    a[target="_blank"]{  /*indica selectores con atributos*/
+        background-color: yellow;
+    }-->
 
